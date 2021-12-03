@@ -1,0 +1,61 @@
+sudo apt update 
+	sudo apt install git vim python 
+	
+	
+	
+	
+	Visual Studio
+	
+instalar dicionario Brasileiro, ir em extensoes e baixar a extensao Brazilian Portuguese 
+	F1-->show spell checker preferences 
+		habilitar portuguese 
+			habilitar portuguese - Brazil
+				habilitar as linguagens bat, perl, powershell, shellscript e vb
+					instalar as extensoes shell-fornat, shellcheck, cisco ios syntax, bash beautify, bats (bash automated testing system
+						
+configurações
+	pesquisar por C spell: Enabled
+		descer até a parte adicionar item 
+			adicionar o item shellscript 
+			
+	pesquisar por C spell: language 
+		descer até o final e verificar se as 3 linguagens, en, pt-BR, pt
+		
+	pesquisar C spell: Max Duplicate 
+		aumentar o maximo de erros para 5000 
+		
+	pesquisar C spell: Max Number 
+		aumentar o maximo de controle de linhas para 100000
+		
+	pesquisar Editor: Tab Size
+		e verificar se o tab size está 4
+		
+	pesquisar Editor: Detect Indent 
+		e desmarcar a opção 
+		
+	pesquisar Editor: Insert Spaces 
+		desmarcar a opção
+		
+	CRLF- Se fizer o arquivo no Linux, nao funciona no Windows, se fizer no Windows nao funciona no Linux.
+	Padrao LF
+	
+	pesquisar Files: Eol
+		mudar de auto para /n, o que seria o LF
+		
+	Colocar MIT License 
+	
+	Ir no terminal de documentos
+		git clone e colar o link do seu repositorio no github, para clonar e ter o mesmo repositorio, porem local 
+			ls
+				ir no VScode, apertar ctrl+k e ctrl+o, e buscar pelo seu arquivo, (documentos/devops) ok 
+					criar um novo arquivo no github
+						gitpull no terminal do vscode (ctrl+j)
+							git status, para verificar o que tem de mudança no diretório local 
+								git add ., para adicionar todos os arquivos nos recursos de controle de versão 
+									git config --global user.email "seu email do github"
+										git config --global user.name "seu nome de exibição"
+											git commit -m "qualquer mensagem para identificar a mudança"
+												git push, para puxar todas as mudanças para o git
+													nunca autorizar a autenticação do vscode com o github em computadores publicos 	
+														git pull && git add . && git commit -m "Atualizaçao" && git push
+															git pull, para puxar os arquivos atualizados que nao tem no seu computador e tem no seu repositorio do git
